@@ -19,7 +19,7 @@ import useToken from "../hooks/useToken";
 
 const LoginForm = () => {
   const { isLoading } = useAppSelector((state) => state.login);
-  const { showErrorMessage, showSuccessMessage } = useToast();
+  const { showErrorMessage } = useToast();
   const { saveAccessToken } = useToken();
   const { show } = useHandleResize();
   const dispatch = useAppDispatch();

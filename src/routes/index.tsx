@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Register from "../pages/auth/Register";
 import Login from "../pages/auth/Login";
 import { DashboardLayout } from "../components/Layouts/DashboardLayout";
-import Account from "../components/dashboard/account/account";
+import AccountPage from "../components/dashboard/account/AccountPage";
 
 export const Routers = () => {
   return (
@@ -11,7 +11,7 @@ export const Routers = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
-          <Route path="account" element={<Account />} />
+          <Route path="account" element={<AccountPage />} />
         </Route>
       </Routes>
     </>
