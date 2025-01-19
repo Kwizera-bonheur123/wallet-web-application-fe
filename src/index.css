@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins w-full h-full overflow-x-hidden;
+}
+
+@layer utilities {
+  /* css flex */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .button-size {
+    @apply px-5 ipad:px-8 py-2 ipad:py-2.5 text-[10px] mobile:text-[11px] ipad:text-xs;
+  }
+  .form-input {
+    @apply px-3 py-4 text-xs rounded-lg;
+  }
+  .bgImage {
+    background-image: url("./assets/register-login-background.svg");
+    background-position: "center";
+    background-size: "cover";
+  }
+
+  .labels {
+    @apply text-xs text-neutral-black/75 ml-1;
+  }
+  .product-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+  .sidebar-item {
+    @apply flex py-3 items-center px-[9%] gap-7 text-[19px]  font-semibold;
+  }
+  .hero_background_image {
+    background-image: url("../src/assets/heroe_image_background.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .hero_image {
+    background-image: url("../src/assets/heroe_image.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: transparent;
+  }
+
+  .pagination li.active {
+    background-color: #256490;
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
